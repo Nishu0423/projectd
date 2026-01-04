@@ -113,3 +113,82 @@ body {
 .cat:hover p {
   color: #2874f0;
 }
+/* HERO BANNER */
+.hero {
+  margin: 15px 0;
+}
+
+.hero-box img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* DEALS SECTION */
+.deals {
+  margin-top: 15px;
+}
+
+.deals-box {
+  background: #fff;
+  padding: 20px;
+}
+
+.deals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.deals-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.deals-header button {
+  background: #2874f0;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.deal-products {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.deal-products::-webkit-scrollbar {
+  display: none;
+}
+
+.deal-card {
+  min-width: 200px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.deal-card img {
+  height: 180px;
+  object-fit: contain;
+}
+
+.deal-card h4 {
+  font-size: 14px;
+  margin: 10px 0 5px;
+}
+
+.deal-card p {
+  color: #388e3c;
+  font-weight: 500;
+}
+
+.deal-card:hover {
+  transform: scale(1.03);
+}
+
