@@ -16,10 +16,11 @@
       <span>Explore <b>Plus</b> ✨</span>
     </div>
 
-    <div class="search-box">
-      <input type="text" placeholder="Search for Products, Brands and More">
-      <button>🔍</button>
-    </div>
+   <div class="search-box">
+  <input type="text" id="searchInput"
+         placeholder="Search for Products, Brands and More">
+  <button>🔍</button>
+</div>
 
     <div class="header-links">
       <div class="login">Login</div>
@@ -215,6 +216,28 @@
     </div>
   </div>
 </section>
+<div class="search-box">
+  
+<script>
+const searchInput = document.getElementById("searchInput");
+const products = document.querySelectorAll(".deal-card");
+
+searchInput.addEventListener("keyup", function () {
+    let searchValue = searchInput.value.toLowerCase();
+
+    products.forEach(product => {
+        let productName = product.querySelector("h4")
+                                 .textContent
+                                 .toLowerCase();
+
+        if (productName.includes(searchValue)) {
+            product.style.display = "block";
+        } else {
+            product.style.display = "none";
+        }
+    });
+});
+</script>
 
 
 
